@@ -53,9 +53,9 @@ document.addEventListener("mousemove", event => {
     mouse.exactPos.y = event.clientY;
 });
 
-// Touchscreen support for a mouse game could be interesting
-// DO NOT ENABLE THE DEVIL CODE
-// document.addEventListener("touchmove", event => {
-//     mouse.exactPos.x = event.touches[0].clientX;
-//     mouse.exactPos.y = event.touches[0].clientY;
-// });
+// Touchscreen support for a mouse game is kinda cheating but... why not
+document.addEventListener("touchmove", event => {
+    // Position must be rounded or mouse.UpdateCollCols() creates an infinite loop
+    mouse.exactPos.x = Math.round(event.touches[0].clientX);
+    mouse.exactPos.y = Math.round(event.touches[0].clientY);
+});

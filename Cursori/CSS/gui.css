@@ -58,7 +58,7 @@ body::backdrop {
     background-color: #202020;
 
     animation-name: loadingScreenFade;
-    animation-duration: 500ms;
+    animation-duration: 200ms;
     animation-fill-mode: forwards;
     animation-play-state: paused;
     

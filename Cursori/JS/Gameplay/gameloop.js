@@ -35,7 +35,7 @@ function GameLoop() {
     path.Tick();
 
     // Play risking sound effect
-    const currentRisk = 1 - Math.pow(Math.min(path.tail[0].clone.sub(mouse.pos).length / path.pos.clone.sub(path.tail[0]).length, 1), 2);
+    const currentRisk = Clamp(1 - Math.pow(Math.min(path.tail[0].clone.sub(mouse.pos).length / path.pos.clone.sub(path.tail[0]).length, 1), 2), 0, 1);
     if(gameRuntime % (0.1 / currentRisk) < deltaTime) sounds.StopPlay(sounds.riskTick, Map(currentRisk, 0, 1, 0.7, 1));
 
     // Draw the grace period and stop

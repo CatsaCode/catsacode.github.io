@@ -64,10 +64,8 @@ class Path {
         // this.rot = Lerp(this.rot, targetDir, turnStrength);
         this.rot = Lerp(this.rot, targetDir, 1 - Math.pow(1 - turnStrength, deltaTime * 60));
         // Move forwards
-        // const speed = Map(Vec2.Dot(Vec2.FromRadians(this.rot), targetVec.clone.normalize()), -1, 1, dmin * 0.5, dmin * 1.4);
-        // const speed = Map(dist, 0, largerDimension, 500, 500);
-        const speed = currentDifficulty.GetSpeed(Vec2.Dot(Vec2.FromRadians(this.rot), targetVec.clone.normalize()));
-        this.pos.add(Vec2.FromRadians(this.rot).mul(speed * deltaTime));
+        this.speed = currentDifficulty.GetSpeed(Vec2.Dot(Vec2.FromRadians(this.rot), targetVec.clone.normalize()));
+        this.pos.add(Vec2.FromRadians(this.rot).mul(this.speed * deltaTime));
 
         // Ensure the head can't go off screen
         this.pos.x = Clamp(this.pos.x, 0, canvas.width);

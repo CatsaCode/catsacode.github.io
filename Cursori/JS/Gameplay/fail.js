@@ -32,7 +32,7 @@ function Fail() {
     // Update score text and high score
     score.time = Math.round(score.time);
     score.risk = Math.round(score.risk);
-    const riskPercent = Math.round(score.risk / ((gameRuntime - graceMilliseconds / 1000) * score.riskWeight) * 1000) / 10;
+    const riskPercent = Clamp(Math.round(score.risk / ((gameRuntime - graceMilliseconds / 1000) * score.riskWeight) * 1000) / 10, 0, 100);
     scoreText.innerText = `Score: ${score.time + score.risk} | Time: ${Math.floor(gameRuntime / 60)}:${(Math.floor(gameRuntime % 60) < 10 ? "0" : "") + Math.floor(gameRuntime % 60 * 100) / 100} | Risk: ${riskPercent}%`;
     const highScore = window.localStorage.getItem("highScore" + currentDifficulty.name);
     highScoreText.innerText = currentDifficulty.name + " High Score: " + highScore;

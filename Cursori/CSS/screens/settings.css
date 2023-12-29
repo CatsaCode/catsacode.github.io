@@ -35,6 +35,7 @@
     height: 4vmin;
     vertical-align: middle;
 
+    border-style: solid;
     border-radius: 8px;
     border-width: 2px;
     border-color: black;
