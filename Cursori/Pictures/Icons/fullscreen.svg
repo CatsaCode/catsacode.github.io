@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 8px;" x1="4" y1="4" x2="30" y2="30"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="25" y2="4"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="4" y2="25"/>
+  </g>
+  <g transform="matrix(0, 1, -1, 0, 100, 0)">
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 8px;" x1="4" y1="4" x2="30" y2="30"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="25" y2="4"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="4" y2="25"/>
+  </g>
+  <g transform="matrix(-1, 0, 0, -1, 100, 100)">
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 8px;" x1="4" y1="4" x2="30" y2="30"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="25" y2="4"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="4" y2="25"/>
+  </g>
+  <g transform="matrix(0, -1, 1, 0, 0, 100)">
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-width: 8px;" x1="4" y1="4" x2="30" y2="30"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="25" y2="4"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-width: 8px; stroke-linecap: round;" x1="4" y1="4" x2="4" y2="25"/>
+  </g>
+</svg>

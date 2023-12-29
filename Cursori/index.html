@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cursori</title>
+        <link rel="icon" type="image/x-icon" href="./Pictures/Icons/favicon.ico" />
+
+        <!-- Stop mobile from zooming -->
+        <!-- Touchscreen support also didn't go well -->
+        <!-- <meta name="viewport" content="user-scalable=no" /> -->
+
+        <link rel="stylesheet" href="./CSS/canvas.css" />
+        <link rel="stylesheet" href="./CSS/gui.css" />
+
+        <!-- Load CSS specific to each screen -->
+        <link rel="stylesheet" href="./CSS/baseScreen.css" />
+        <link rel="stylesheet" href="./CSS/screens/mainMenu.css" />
+        <link rel="stylesheet" href="./CSS/screens/fail.css" />
+        <link rel="stylesheet" href="./CSS/screens/patterns.css" />
+        <link rel="stylesheet" href="./CSS/screens/settings.css" />
+    </head>
+    <body>
+        <canvas id="mainCanvas"></canvas>
+        
+        <!-- Main menu -->
+        <div id="mainMenuScreen" class="screen">
+            <p id="titleText" class="screenTitle" onclick="titleText.style.animationPlayState = titleText.style.animationPlayState == 'running' ? 'paused' : 'running';">Cursori</p>
+            <div class="menuRack">
+                <button class="basicMenuButton menuRackItem" onclick="GameScreen.Load(screens.difficulty);">Play</button>
+                <button class="basicMenuButton menuRackItem" onclick="GameScreen.Load(screens.patterns);">Patterns</button>
+                <button class="basicMenuButton menuRackItem" onclick="GameScreen.Load(screens.settings);">Settings</button>
+            </div>
+        </div>
+
+        <!-- Difficulty screen -->
+        <div id="difficultyScreen" class="screen">
+            <p class="screenTitle">Difficulty</p>
+            <div class="menuRack">
+                <button class="basicMenuButton menuRackItem" onclick="Difficulty.Set(difficulties.easy); StartGame();">Easy</button>
+                <button class="basicMenuButton menuRackItem" onclick="Difficulty.Set(difficulties.medium); StartGame();">Medium</button>
+                <button class="basicMenuButton menuRackItem" onclick="Difficulty.Set(difficulties.hard); StartGame();">Hard</button>
+            </div>
+        </div>
+
+        <!-- Gameplay screen -->
+        <div id="gameplayScreen" class="screen">
+            <!-- <p id="gameplayScoreText">Score: </p> -->
+        </div>
+
+        <!-- Fail screen -->
+        <div id="failScreen" class="screen">
+            <p id="failText" class="screenTitle">Game Over</p>
+            <div id="scoresText">
+                <p id="scoreText">Score: Error!</p>
+                <p id="highScoreText">High Score: Error!</p>
+            </div>
+            <div class="menuRack">
+                <button class="basicMenuButton menuRackItem" onclick="StartGame();">Restart</button>
+                <button class="basicMenuButton menuRackItem" onclick="GameScreen.Load(screens.mainMenu);">Main Menu</button>
+            </div>
+        </div>
+
+        <!-- Patterns screen -->
+        <div id="patternsScreen">
+            <p class="screenTitle">Patterns</p>
+            <button class="basicMenuButton backButton" onclick="GameScreen.Load(screens.mainMenu);">Back</button>
+            <!-- Rest is generated in patterns.js -->
+        </div>
+
+        <!-- Settings menu -->
+        <div id="settingsMenu">
+            <p class="screenTitle">Settings</p>
+            <button class="basicMenuButton backButton" onclick="GameScreen.Load(screens.mainMenu);">Back</button>
+            <!-- Basic settings -->
+            <div>
+                <button class="basicMenuButton settingsButton" onclick="document.body.requestFullscreen();">Fullscreen<img src="./Pictures/Icons/fullscreen.svg"></button>
+                <div class="settingsInputDiv hoverButtonSFX">
+                    <label for="trailLengthInput">Trail length</label>
+                    <input type="number" id="trailLengthInput" class="settingsInput" placeholder="(seconds)" step="0.1" min="0" value="0.3" onchange="mouseTrail.SetDuration(mouseTrail.lengthInput.value);">
+                </div>
+                <div class="settingsInputDiv hoverButtonSFX">
+                    <label for="trailWidthInput">Trail width</label>
+                    <input type="number" id="trailWidthInput" class="settingsInput" placeholder="(pixels)" step="1" min="1" value="5" onchange="mouseTrail.SetWidth(mouseTrail.widthInput.value)">
+                </div>
+                <br />
+                <button class="basicMenuButton settingsButton" onclick="if(confirm('Delete all save data?')) {window.localStorage.clear(); window.location.reload();}">Erase save data<img src="./Pictures/Icons/trash.svg"></button>
+            </div>
+        </div>
+
+        <div id="audioNotice">
+            <p>Click anywhere to enable audio</p>
+            <button class="basicMenuButton" onmousedown="setTimeout(() => soundsEnabled = false, 200);">Mute</button>
+        </div>
+
+        <div id="loadingScreen">
+            <p>Loading...</p>
+        </div>
+
+        <!-- Load all JavaScript code -->
+        <script src="./JS/MathAbstraction/mathUtils.js"></script>
+        <script src="./JS/MathAbstraction/vec2.js"></script>
+        <script src="./JS/Gameplay/difficulties.js"></script>
+        <script src="./JS/Gameplay/fail.js"></script>
+        <script src="./JS/Gameplay/gameloop.js"></script>
+        <script src="./JS/Gameplay/graceStart.js"></script>
+        <script src="./JS/Gameplay/path.js"></script>
+        <script src="./JS/Gameplay/startGame.js"></script>
+        <script src="./JS/Mouse/mouseInput.js"></script>
+        <script src="./JS/Mouse/mouseTrail.js"></script>
+        <script src="./JS/Systems/canvas.js"></script>
+        <script src="./JS/Systems/gameScreens.js"></script>
+        <script src="./JS/Systems/sounds.js"></script>
+        <script src="./JS/Systems/patterns.js"></script>
+        <script src="./JS/main.js"></script>
+    </body>
+</html>

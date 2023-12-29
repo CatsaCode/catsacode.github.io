@@ -1,0 +1,6 @@
+All were exported at 22k sample rate
+Gain on locked.wav was decreased to (I forgot)db
+
+hoverButton.wav: https://sfxr.me/#8LRpsRtwNSGY8AUL1bm7qwzKHrYR9va66SRSe7EppEFDzWeVTsJyrXPxrqCKiaxwUDxT3vonKdShX5zFaxjqt6W4DvBqLrbbENdGjxfnMWfsaLw6ZDMaKGJVm
+locked.wav: https://sfxr.me/#7BMHBGFXyam4VLnbUiZjLjCgWxsyXjAKo7dx1CzQcwfwBtwr7Lvmrru3t6Z1z6jiEATEFKvpYmTKbRQpfx3FGSvZia6i1MyDJcGrB96nTd3yVv61xqJscLVZh
+riskTick.wav: https://sfxr.me/#7P7KU9KB39eNZA2Qagb1mJNhrTiNQpF3HouMD7B5ByMq1LqRjxDb3Jy74UCapPw2SpFD9RDf4Fz2AFrPXETqixxyPY3xFYLFz7Keex5UfUukprPX8ERpykRoV

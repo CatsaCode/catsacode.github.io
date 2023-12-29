@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <polygon style="stroke-linejoin: round; stroke: rgb(0, 0, 0); stroke-width: 16px;" points="24 35 76 35 68 92 32 92"/>
+  <line style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 16px; stroke-linecap: round;" x1="19" y1="35" x2="81" y2="35"/>
+  <path style="stroke: rgb(0, 0, 0); fill: none; stroke-width: 16px;" d="M 30 35 C 25 0 75 0 70 35"/>
+  <line style="stroke: rgb(255, 255, 255); stroke-width: 8px; stroke-linecap: round; fill: none;" x1="50" y1="50" x2="50" y2="85"/>
+  <line style="stroke: rgb(255, 255, 255); stroke-width: 8px; stroke-linecap: round; fill: none;" x1="32" y1="50" x2="35" y2="85"/>
+  <line style="stroke: rgb(255, 255, 255); stroke-width: 8px; stroke-linecap: round; fill: none;" x1="68" y1="50" x2="65" y2="85"/>
+</svg>

@@ -1,0 +1,76 @@
+.screen {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.screenTitle {
+    margin: 0px;
+
+    position: relative;
+    text-align: center;
+    top: 3%;
+
+    font-size: 15vmin;
+    color: white;
+}
+
+
+
+.basicMenuButton {
+    font-size: 6vh;
+
+    border-style: none;
+    border-radius: 20px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.basicMenuButton:hover {
+    filter: brightness(90%);
+}
+
+.basicMenuButton:active {
+    filter: brightness(80%);
+}
+
+
+
+.menuRack {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, 0);
+    width: 40vh;
+    height: 65%;
+}
+
+.menuRackItem {
+    display: block;
+
+    width: 100%;
+    height: 14vh;
+
+    margin-bottom: 8px;
+}
+
+.menuRackItem:hover {
+    transform: rotate(2deg);
+}
+
+
+
+.backButton {
+    position: absolute;
+    left: 6vmin;
+    top: 6vmin;
+    width: 14vmin;
+    height: 7vmin;
+
+    font-size: 4vmin;
+}

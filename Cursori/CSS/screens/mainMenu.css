@@ -1,0 +1,16 @@
+@keyframes titleAnimation {
+    0%   {}
+    12%  {transform: translate(20vw, 0) skewX(-20deg)}
+    35%  {transform: translate(30vw, 40vh) rotate(-202deg) rotateY(120deg)}
+    50%  {transform: translate(-40vw, 0) rotate(1250deg); filter: blur(0)}
+    75%  {transform: scaleX(0) scaleY(1000%); filter: blur(10px)}
+    100% {}
+}
+
+#titleText {
+    animation-name: titleAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}

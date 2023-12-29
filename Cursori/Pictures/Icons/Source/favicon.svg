@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <line style="stroke-linecap: round; stroke: rgb(255, 255, 255); fill: none; stroke-width: 12px;" x1="50" y1="50" x2="70" y2="70"/>
+  <polygon style="stroke-width: 8px; stroke: rgb(255, 255, 255);" points="39 84 14 14 84 39 50 50"/>
+</svg>
