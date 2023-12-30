@@ -47,7 +47,7 @@ function Setup() {
 
     const loadingScreen = document.getElementById("loadingScreen");
     loadingScreen.style.animationPlayState = "running";
-    setTimeout(() => loadingScreen.remove(), 1000);
+    setTimeout(() => loadingScreen.remove(), 300);
 
     // Start frame loop
     window.requestAnimationFrame(Frame);
