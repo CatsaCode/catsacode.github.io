@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <line style="stroke: rgb(0, 0, 0); fill: rgb(32, 32, 32); stroke-width: 35px;" x1="-20" y1="-20" x2="120" y2="120"/>
-  <line style="stroke: rgb(0, 0, 0); fill: rgb(32, 32, 32); stroke-width: 35px;" x1="-20" y1="80" x2="20" y2="120"/>
-  <line style="stroke: rgb(0, 0, 0); fill: rgb(32, 32, 32); stroke-width: 35px;" x1="80" y1="-20" x2="120" y2="20"/>
-</svg>
